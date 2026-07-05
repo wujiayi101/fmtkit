@@ -33,7 +33,12 @@ npm run preview
 
 Pushes to `main` run CI (lint + build) and deploy to both GitHub Pages and Cloudflare Pages.
 
-Required GitHub secrets for Cloudflare:
+Required GitHub **repository** secrets for Cloudflare (copy from another repo such as `hk-outdoor-index`):
+
+```bash
+gh secret set CLOUDFLARE_API_TOKEN --repo wujiayi101/format-tools
+gh secret set CLOUDFLARE_ACCOUNT_ID --repo wujiayi101/format-tools
+```
 
 | Secret | Description |
 |--------|-------------|
