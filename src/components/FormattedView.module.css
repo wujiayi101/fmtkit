@@ -1,0 +1,70 @@
+.pre {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.code {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+
+.line {
+  display: flex;
+  min-height: 1.65em;
+}
+
+.line:hover {
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.lineNum {
+  flex-shrink: 0;
+  width: 3rem;
+  padding-right: 1rem;
+  text-align: right;
+  color: var(--text-muted);
+  opacity: 0.5;
+  user-select: none;
+  border-right: 1px solid var(--border);
+  margin-right: 1rem;
+}
+
+.lineContent {
+  flex: 1;
+  min-width: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.key {
+  color: var(--accent-hover);
+}
+
+.string {
+  color: #a5f3fc;
+}
+
+.number {
+  color: #fcd34d;
+}
+
+.boolean {
+  color: #f9a8d4;
+}
+
+.null {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.punct {
+  color: var(--text-muted);
+}
+
+.comment {
+  color: var(--text-muted);
+  font-style: italic;
+}

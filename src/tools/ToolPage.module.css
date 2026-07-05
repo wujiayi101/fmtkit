@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.outputWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.outputToolbar {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.stats {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.tableSection {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  border-top: 1px solid var(--border);
+}

@@ -1,0 +1,91 @@
+.tableWrap {
+  overflow: auto;
+  max-height: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--border);
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th {
+  background: var(--bg-elevated);
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.headerCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem;
+}
+
+.colCopy {
+  padding: 0.125rem 0.375rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.colCopy:hover {
+  color: var(--accent-hover);
+  border-color: var(--accent);
+}
+
+.rowNum {
+  width: 3rem;
+  text-align: center !important;
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  background: var(--bg-elevated);
+  padding: 0.625rem 0.5rem !important;
+}
+
+.cellBtn {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.cellBtn:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.table tbody tr:nth-child(even):hover {
+  background: var(--bg-hover);
+}
