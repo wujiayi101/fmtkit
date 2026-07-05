@@ -2,7 +2,9 @@
 
 A lightweight web app for viewing and converting structured data — JSON, YAML, and CSV.
 
-**Live demo:** https://wujiayi101.github.io/format-tools/
+**Live:**
+- GitHub Pages: https://wujiayi101.github.io/format-tools/
+- Cloudflare Pages: https://format-tools.pages.dev/
 
 ## Features
 
@@ -29,4 +31,13 @@ npm run preview
 
 ## Deploy
 
-Pushes to `main` automatically deploy to GitHub Pages via the included workflow.
+Pushes to `main` run CI (lint + build) and deploy to both GitHub Pages and Cloudflare Pages.
+
+Required GitHub secrets for Cloudflare:
+
+| Secret | Description |
+|--------|-------------|
+| `CLOUDFLARE_API_TOKEN` | [API token](https://dash.cloudflare.com/profile/api-tokens) with **Cloudflare Pages Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account ID |
+
+GitHub Pages uses the built-in `GITHUB_TOKEN` via the `github-pages` environment.
