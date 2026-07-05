@@ -7,7 +7,7 @@ import { buildTree } from '../utils/tree'
 import styles from './ToolPage.module.css'
 
 const SAMPLE = `{
-  "name": "Format Tools",
+  "name": "FmtKit",
   "version": 1,
   "features": ["json", "yaml", "csv"],
   "config": {

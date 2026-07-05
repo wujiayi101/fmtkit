@@ -23,7 +23,7 @@ export function Layout({ active, onNavigate, children }: LayoutProps) {
         <div className={styles.brand}>
           <span className={styles.logo}>◈</span>
           <div>
-            <h1 className={styles.title}>Format Tools</h1>
+            <h1 className={styles.title}>FmtKit</h1>
             <p className={styles.subtitle}>JSON · YAML · CSV utilities</p>
           </div>
         </div>

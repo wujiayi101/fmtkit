@@ -33,7 +33,7 @@ jobs:
       - name: Build for GitHub Pages
         run: npm run build
         env:
-          VITE_BASE_PATH: /format-tools/
+          VITE_BASE_PATH: /fmtkit/
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -68,11 +68,11 @@ jobs:
             echo "::error::CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets are required"
             exit 1
           fi
-          if ! npx --yes wrangler@3 pages project list | grep -qw format-tools; then
-            echo "Creating Cloudflare Pages project format-tools"
-            npx --yes wrangler@3 pages project create format-tools --production-branch=main
+          if ! npx --yes wrangler@3 pages project list | grep -qw fmtkit; then
+            echo "Creating Cloudflare Pages project fmtkit"
+            npx --yes wrangler@3 pages project create fmtkit --production-branch=main
           else
-            echo "Cloudflare Pages project format-tools already exists"
+            echo "Cloudflare Pages project fmtkit already exists"
           fi
 
       - name: Deploy to Cloudflare Pages
@@ -80,8 +80,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=format-tools --branch=main --commit-dirty=true
+          command: pages deploy dist --project-name=fmtkit --branch=main --commit-dirty=true
 
       - name: Deployment URL
         if: success()
-        run: echo "Deployed to https://format-tools.pages.dev"
+        run: echo "Deployed to https://fmtkit.pages.dev"

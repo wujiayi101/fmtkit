@@ -7,7 +7,7 @@ import { TreeView } from '../components/TreeView'
 import { buildTree } from '../utils/tree'
 import styles from './ToolPage.module.css'
 
-const SAMPLE = `name: Format Tools
+const SAMPLE = `name: FmtKit
 version: 1
 features:
   - json

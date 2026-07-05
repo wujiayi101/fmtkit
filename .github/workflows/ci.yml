@@ -31,4 +31,4 @@ jobs:
       - name: Build for GitHub Pages
         run: npm run build
         env:
-          VITE_BASE_PATH: /format-tools/
+          VITE_BASE_PATH: /fmtkit/

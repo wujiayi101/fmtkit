@@ -1,10 +1,10 @@
-# Format Tools
+# FmtKit
 
 A lightweight web app for viewing and converting structured data — JSON, YAML, and CSV.
 
 **Live:**
-- GitHub Pages: https://wujiayi101.github.io/format-tools/
-- Cloudflare Pages: https://format-tools.pages.dev/
+- Cloudflare Pages: https://fmtkit.pages.dev/
+- GitHub Pages: https://wujiayi101.github.io/fmtkit/
 
 ## Features
 
@@ -31,13 +31,13 @@ npm run preview
 
 ## Deploy
 
-Pushes to `main` run CI (lint + build) and deploy to both GitHub Pages and Cloudflare Pages.
+Pushes to `main` run CI (lint + build) and deploy to both Cloudflare Pages and GitHub Pages.
 
 Required GitHub **repository** secrets for Cloudflare (copy from another repo such as `hk-outdoor-index`):
 
 ```bash
-gh secret set CLOUDFLARE_API_TOKEN --repo wujiayi101/format-tools
-gh secret set CLOUDFLARE_ACCOUNT_ID --repo wujiayi101/format-tools
+gh secret set CLOUDFLARE_API_TOKEN --repo wujiayi101/fmtkit
+gh secret set CLOUDFLARE_ACCOUNT_ID --repo wujiayi101/fmtkit
 ```
 
 | Secret | Description |
