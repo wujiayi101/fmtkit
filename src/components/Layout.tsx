@@ -42,6 +42,12 @@ export function Layout({ active, onNavigate, children }: LayoutProps) {
         </nav>
       </header>
       <main className={styles.main}>{children}</main>
+      <footer className={styles.footer}>
+        Built by{' '}
+        <a href="https://wu101.com" rel="me noopener noreferrer">
+          Wu Jiayi
+        </a>
+      </footer>
     </div>
   )
 }
