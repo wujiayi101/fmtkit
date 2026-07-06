@@ -9,6 +9,7 @@ A lightweight web app for viewing and converting structured data — JSON, YAML,
 - **JSON Viewer** — Pretty-printed formatted view + expandable tree. Copy any field value or JSON path.
 - **YAML Viewer** — Same split-pane experience for YAML documents.
 - **JSON → YAML** — Paste JSON, get clean YAML output with one-click copy.
+- **YAML → JSON** — Paste YAML, get formatted JSON output with one-click copy.
 - **CSV Table** — Render CSV as a sortable table. Click cells to copy; copy entire columns from headers.
 
 All processing runs in the browser — nothing is sent to a server.

@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import styles from './Layout.module.css'
 
-export type ToolId = 'json' | 'yaml' | 'json-to-yaml' | 'csv'
+export type ToolId = 'json' | 'yaml' | 'json-to-yaml' | 'yaml-to-json' | 'csv'
 
 const TOOLS: { id: ToolId; label: string; description: string }[] = [
   { id: 'json', label: 'JSON Viewer', description: 'Pretty-print & tree view' },
   { id: 'yaml', label: 'YAML Viewer', description: 'Pretty-print & tree view' },
   { id: 'json-to-yaml', label: 'JSON → YAML', description: 'Convert formats' },
+  { id: 'yaml-to-json', label: 'YAML → JSON', description: 'Convert formats' },
   { id: 'csv', label: 'CSV Table', description: 'Render as table' },
 ]
 
